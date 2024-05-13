@@ -9,5 +9,6 @@ class TestController extends Controller
     public function index()
     {
         Cache::store('octane')->put('framework', 'Laravel', 30);
+        return "No issue here!";
     }
 }
